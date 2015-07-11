@@ -13,6 +13,7 @@
 		B0FB3D171B506A1200610D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB3D151B506A1200610D13 /* Main.storyboard */; };
 		B0FB3D221B506A1200610D13 /* TableBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB3D211B506A1200610D13 /* TableBindingTests.swift */; };
 		B0FB3D2D1B506A1200610D13 /* TableBindingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB3D2C1B506A1200610D13 /* TableBindingUITests.swift */; };
+		B0FB3D3D1B506ACE00610D13 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB3D3C1B506ACE00610D13 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		B0FB3D281B506A1200610D13 /* TableBindingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableBindingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB3D2C1B506A1200610D13 /* TableBindingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBindingUITests.swift; sourceTree = "<group>"; };
 		B0FB3D2E1B506A1200610D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FB3D3A1B506A2500610D13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0FB3D3C1B506ACE00610D13 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 		B0FB3D031B506A1200610D13 = {
 			isa = PBXGroup;
 			children = (
+				B0FB3D3A1B506A2500610D13 /* README.md */,
 				B0FB3D0E1B506A1200610D13 /* TableBinding */,
 				B0FB3D201B506A1200610D13 /* TableBindingTests */,
 				B0FB3D2B1B506A1200610D13 /* TableBindingUITests */,
@@ -100,6 +104,7 @@
 				B0FB3D131B506A1200610D13 /* Assets.xcassets */,
 				B0FB3D151B506A1200610D13 /* Main.storyboard */,
 				B0FB3D181B506A1200610D13 /* Info.plist */,
+				B0FB3D3C1B506ACE00610D13 /* Person.swift */,
 			);
 			path = TableBinding;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0FB3D121B506A1200610D13 /* ViewController.swift in Sources */,
+				B0FB3D3D1B506ACE00610D13 /* Person.swift in Sources */,
 				B0FB3D101B506A1200610D13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +480,7 @@
 				B0FB3D331B506A1200610D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0FB3D341B506A1200610D13 /* Build configuration list for PBXNativeTarget "TableBindingTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				B0FB3D361B506A1200610D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0FB3D371B506A1200610D13 /* Build configuration list for PBXNativeTarget "TableBindingUITests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +498,7 @@
 				B0FB3D391B506A1200610D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
