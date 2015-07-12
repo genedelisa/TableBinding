@@ -12,6 +12,8 @@ class ViewController: NSViewController {
     
     @IBOutlet var arrayController: NSArrayController!
        
+    @IBOutlet var tableView: NSTableView!
+    
     /// the data for the table
     dynamic var dataArray = [Person]()
     
@@ -51,6 +53,26 @@ class ViewController: NSViewController {
     }
 
    
+    @IBAction func addPerson(sender: NSButton) {
+        
+        arrayController.addObject(Person())
+        dispatch_async(dispatch_get_main_queue()) {
+            self.tableView.scrollRowToVisible(self.dataArray.count - 1)
+        }
+
+    }
+    
+    @IBAction func removePerson(sender: NSButton) {
+        if let selectedPerson = arrayController.selectedObjects.first as? Person {
+            arrayController.removeObject(selectedPerson)
+        }
+    }
+    
+    @IBAction func showAll(sender: NSButton) {
+        for person in arrayController.arrangedObjects as! [Person] {
+            print("\(person.givenName) \(person.familyName) \(person.age) ")
+        }
+    }
 
     override var representedObject: AnyObject? {
         didSet {

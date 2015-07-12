@@ -1,0 +1,16 @@
+# file: .travis.yml
+language: objective-c
+osx_image: xcode63
+xcode_project: TableBinding.xcodeproj
+xcode_scheme: TableBinding
+
+before_install:
+- brew update
+- brew outdated xctool || brew upgrade xctool
+- gem install xcpretty -N
+
+script:
+
+- xctool -project TableBinding.xcodeproj -scheme 'TableBinding' test | xcpretty -c
+
+
