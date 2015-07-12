@@ -53,6 +53,8 @@ class ViewController: NSViewController {
     }
 
    
+    // these actions are not used. Instead, in IB I set the buttons' action to the array controller's actions.
+    // the problem is, how do scroll to the newly inserted item as you can do here?
     @IBAction func addPerson(sender: NSButton) {
         
         arrayController.addObject(Person())
@@ -61,7 +63,8 @@ class ViewController: NSViewController {
         }
 
     }
-    
+
+    // not used, but if you wanted to get the selection, this is one way.
     @IBAction func removePerson(sender: NSButton) {
         if let selectedPerson = arrayController.selectedObjects.first as? Person {
             arrayController.removeObject(selectedPerson)
