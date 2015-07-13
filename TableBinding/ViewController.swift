@@ -49,19 +49,16 @@ class ViewController: NSViewController {
         dataArray.append(Person(givenName: "X.", familyName: "Benedict", age: 88))
         dataArray.append(Person(givenName: "V.", familyName: "Gates", age: 39))
 
-
     }
 
    
     // these actions are not used. Instead, in IB I set the buttons' action to the array controller's actions.
     // the problem is, how do scroll to the newly inserted item as you can do here?
     @IBAction func addPerson(sender: NSButton) {
-        
         arrayController.addObject(Person())
         dispatch_async(dispatch_get_main_queue()) {
             self.tableView.scrollRowToVisible(self.dataArray.count - 1)
         }
-
     }
 
     // not used, but if you wanted to get the selection, this is one way.
