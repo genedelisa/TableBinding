@@ -1,6 +1,5 @@
 # TableBinding
 
-Swift NSTableView with Cocoa bindings.
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://en.wikipedia.org/wiki/MIT_License)
 [![Build Status](https://travis-ci.org/genedelisa/TableBinding.svg)](https://travis-ci.org/genedelisa/TableBinding)
@@ -8,6 +7,7 @@ Swift NSTableView with Cocoa bindings.
 [![GitHub tag](https://img.shields.io/github/tag/genedelisa/tablebinding.svg)](https://github.com/genedelisa/tablebinding/)
 [![GitHub release](https://img.shields.io/github/release/genedelisa/tablebinding.svg)](https://github.com/genedelisa/tablebinding/)
 
+An example using an NSTableView with Cocoa bindings in Swift.
 
 
 ## Blog post for this example.
@@ -34,6 +34,8 @@ If you find one, [please add it to issues](https://github.com/genedelisa/TableBi
 ## Licensing
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+Please read the [LICENSE](LICENSE) for details.
 
 ## Credits
 
