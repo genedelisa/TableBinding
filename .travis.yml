@@ -1,6 +1,6 @@
 # file: .travis.yml
 language: objective-c
-osx_image: xcode63
+osx_image: xcode6.4
 xcode_project: TableBinding.xcodeproj
 xcode_scheme: TableBinding
 
@@ -11,6 +11,12 @@ before_install:
 
 script:
 
-- xctool -project TableBinding.xcodeproj -scheme 'TableBinding' test | xcpretty -c
+# - xctool -project TableBinding.xcodeproj -scheme "TableBinding" test | xcpretty -c
+
+
+- xctool -project TableBinding.xcodeproj -scheme "TableBinding" -sdk macosx10.10 -configuration Debug -destination "platform=OS X" -PBXBuildsContinueAfterErrors=0 test | xcpretty -c
+
+
+# http://docs.travis-ci.com/user/languages/objective-c/
 
 

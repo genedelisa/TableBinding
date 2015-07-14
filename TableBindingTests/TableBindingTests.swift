@@ -38,6 +38,24 @@ class TableBindingTests: XCTestCase {
         
     }
     
+    func testPersonKVO() {
+        let joe = Person(givenName: "joe", familyName: "blow", age: 22)
+
+        let expectation = keyValueObservingExpectationForObject(joe,
+            keyPath: "familyName",
+            expectedValue: "schmoe")
+        
+        joe.setValue("schmoe", forKey: "familyName")
+        
+        waitForExpectationsWithTimeout(5) { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+
+    }
+
+    
 }
 
 

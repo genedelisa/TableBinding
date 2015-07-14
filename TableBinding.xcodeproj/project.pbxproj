@@ -16,19 +16,11 @@
 		B0FB3D141B506A1200610D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FB3D131B506A1200610D13 /* Assets.xcassets */; };
 		B0FB3D171B506A1200610D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB3D151B506A1200610D13 /* Main.storyboard */; };
 		B0FB3D221B506A1200610D13 /* TableBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB3D211B506A1200610D13 /* TableBindingTests.swift */; };
-		B0FB3D2D1B506A1200610D13 /* TableBindingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB3D2C1B506A1200610D13 /* TableBindingUITests.swift */; };
 		B0FB3D3D1B506ACE00610D13 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB3D3C1B506ACE00610D13 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B0FB3D1E1B506A1200610D13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B0FB3D041B506A1200610D13 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B0FB3D0B1B506A1200610D13;
-			remoteInfo = TableBinding;
-		};
-		B0FB3D291B506A1200610D13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0FB3D041B506A1200610D13 /* Project object */;
 			proxyType = 1;
@@ -51,7 +43,6 @@
 		B0FB3D1D1B506A1200610D13 /* TableBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB3D211B506A1200610D13 /* TableBindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBindingTests.swift; sourceTree = "<group>"; };
 		B0FB3D231B506A1200610D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0FB3D281B506A1200610D13 /* TableBindingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableBindingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FB3D2C1B506A1200610D13 /* TableBindingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBindingUITests.swift; sourceTree = "<group>"; };
 		B0FB3D2E1B506A1200610D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0FB3D3A1B506A2500610D13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -67,13 +58,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B0FB3D1A1B506A1200610D13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0FB3D251B506A1200610D13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,7 +87,6 @@
 			children = (
 				B0FB3D0C1B506A1200610D13 /* TableBinding.app */,
 				B0FB3D1D1B506A1200610D13 /* TableBindingTests.xctest */,
-				B0FB3D281B506A1200610D13 /* TableBindingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,24 +161,6 @@
 			productReference = B0FB3D1D1B506A1200610D13 /* TableBindingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B0FB3D271B506A1200610D13 /* TableBindingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0FB3D371B506A1200610D13 /* Build configuration list for PBXNativeTarget "TableBindingUITests" */;
-			buildPhases = (
-				B0FB3D241B506A1200610D13 /* Sources */,
-				B0FB3D251B506A1200610D13 /* Frameworks */,
-				B0FB3D261B506A1200610D13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B0FB3D2A1B506A1200610D13 /* PBXTargetDependency */,
-			);
-			name = TableBindingUITests;
-			productName = TableBindingUITests;
-			productReference = B0FB3D281B506A1200610D13 /* TableBindingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,10 +174,6 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					B0FB3D1C1B506A1200610D13 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = B0FB3D0B1B506A1200610D13;
-					};
-					B0FB3D271B506A1200610D13 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = B0FB3D0B1B506A1200610D13;
 					};
@@ -233,7 +194,6 @@
 			targets = (
 				B0FB3D0B1B506A1200610D13 /* TableBinding */,
 				B0FB3D1C1B506A1200610D13 /* TableBindingTests */,
-				B0FB3D271B506A1200610D13 /* TableBindingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,13 +213,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B0FB3D1B1B506A1200610D13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0FB3D261B506A1200610D13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,14 +256,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0FB3D241B506A1200610D13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0FB3D2D1B506A1200610D13 /* TableBindingUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -318,11 +263,6 @@
 			isa = PBXTargetDependency;
 			target = B0FB3D0B1B506A1200610D13 /* TableBinding */;
 			targetProxy = B0FB3D1E1B506A1200610D13 /* PBXContainerItemProxy */;
-		};
-		B0FB3D2A1B506A1200610D13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B0FB3D0B1B506A1200610D13 /* TableBinding */;
-			targetProxy = B0FB3D291B506A1200610D13 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,32 +408,6 @@
 			};
 			name = Release;
 		};
-		B0FB3D381B506A1200610D13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TableBindingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rockhoppertech.TableBindingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TableBinding;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		B0FB3D391B506A1200610D13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TableBindingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rockhoppertech.TableBindingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TableBinding;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -520,15 +434,6 @@
 			buildConfigurations = (
 				B0FB3D351B506A1200610D13 /* Debug */,
 				B0FB3D361B506A1200610D13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0FB3D371B506A1200610D13 /* Build configuration list for PBXNativeTarget "TableBindingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0FB3D381B506A1200610D13 /* Debug */,
-				B0FB3D391B506A1200610D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
