@@ -3,7 +3,7 @@
 Swift NSTableView with Cocoa bindings.
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://en.wikipedia.org/wiki/MIT_License)
-
+[![Build Status](https://travis-ci.org/genedelisa/TableBinding.svg)](https://travis-ci.org/genedelisa/TableBinding)
 
 ## Blog post for this example.
 
