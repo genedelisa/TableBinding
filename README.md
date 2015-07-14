@@ -7,7 +7,7 @@ Swift NSTableView with Cocoa bindings.
 
 ## Blog post for this example.
 
-[Blog post](http://www.rockhoppertech.com/blog/)
+[Blog post](http://www.rockhoppertech.com/blog/swift-nstableview-and-nsarraycontroller/)
 
 
 ## Bugs

@@ -747,14 +747,10 @@
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                        <connections>
+                                                                            <binding destination="s3l-n1-u5a" name="value" keyPath="objectValue.familyName" id="v07-2H-IE9"/>
+                                                                        </connections>
                                                                     </textFieldCell>
-                                                                    <connections>
-                                                                        <binding destination="s3l-n1-u5a" name="value" keyPath="objectValue.familyName" id="v6g-kN-b3X">
-                                                                            <dictionary key="options">
-                                                                                <bool key="NSConditionallySetsEditable" value="NO"/>
-                                                                            </dictionary>
-                                                                        </binding>
-                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
@@ -786,14 +782,10 @@
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                        <connections>
+                                                                            <binding destination="nWq-dD-LZI" name="value" keyPath="objectValue.age" id="ddU-tT-hOt"/>
+                                                                        </connections>
                                                                     </textFieldCell>
-                                                                    <connections>
-                                                                        <binding destination="nWq-dD-LZI" name="value" keyPath="objectValue.age" id="7YZ-Ux-4k6">
-                                                                            <dictionary key="options">
-                                                                                <bool key="NSConditionallySetsEditable" value="NO"/>
-                                                                            </dictionary>
-                                                                        </binding>
-                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
