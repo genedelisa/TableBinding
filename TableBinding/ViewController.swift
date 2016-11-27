@@ -54,27 +54,27 @@ class ViewController: NSViewController {
    
     // these actions are not used. Instead, in IB I set the buttons' action to the array controller's actions.
     // the problem is, how do scroll to the newly inserted item as you can do here?
-    @IBAction func addPerson(sender: NSButton) {
+    @IBAction func addPerson(_ sender: NSButton) {
         arrayController.addObject(Person())
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             self.tableView.scrollRowToVisible(self.dataArray.count - 1)
         }
     }
 
     // not used, but if you wanted to get the selection, this is one way.
-    @IBAction func removePerson(sender: NSButton) {
+    @IBAction func removePerson(_ sender: NSButton) {
         if let selectedPerson = arrayController.selectedObjects.first as? Person {
             arrayController.removeObject(selectedPerson)
         }
     }
     
-    @IBAction func showAll(sender: NSButton) {
+    @IBAction func showAll(_ sender: NSButton) {
         for person in arrayController.arrangedObjects as! [Person] {
             print("\(person.givenName) \(person.familyName) \(person.age) ")
         }
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
